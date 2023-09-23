@@ -1,0 +1,129 @@
+header{
+    display:none!important;
+}
+
+form{
+    margin:20px;
+}
+
+h4{
+    margin-left: 20px;
+    color:purple;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+label{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+select{
+    height:50px;
+}
+.forgot{
+    margin-top: 10px;
+}
+
+.or{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fingerprint{
+    border: purple 1px solid;
+    width:70%;
+    height: 50px;
+    
+}
+
+.forgot-pass{
+    color:purple;
+}
+
+.margin-30{
+    margin:30px;
+}
+
+.flex-row-90 {
+    display: flex!important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.agreement{
+    font-size: 13px;
+}
+
+.lower-auth{
+    margin-top: 10px;
+}
+
+.round-social{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+
+.twitter{
+    background: rgb(81, 126, 222);
+}
+
+.google{
+    background: orange;
+}
+
+.fingerprint-text{
+    padding-top:15px;
+    color:purple;
+    text-align:center;
+}
+
+input{
+    height:50px;
+}
+
+.signup{
+    margin: 20px;
+}
+
+.hr{
+    width: 38%!important;
+    height:1px;
+    background:rgb(209, 207, 207);
+}
+
+#policy-doc{
+    height: 15px;
+    margin-left: 10px;
+}
+
+.link{
+    color:purple!important;
+    text-decoration: none;
+}
+
+#phone{
+    margin-top: 33px;
+}
+
+.signup{
+    text-align: center;
+    margin-top:20px;
+}
+
+.password-control{
+    margin-top: 20px;
+}
+
+.submit{
+    color:white;
+    background: purple!important;
+    width: 70%!important;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    height:70px;
+}

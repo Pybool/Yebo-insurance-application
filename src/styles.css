@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+.flex-row-10{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.flex-row-btw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-col-even{
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center;
+    gap:10px!important;
+}
+
+.flex-col-wrap{
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center;
+    gap:10px!important;
+    flex-wrap: wrap!important;
+}
+
+.flex-row-10-justify-to-center{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.margin-left-40{
+    margin-left:40px;
+}
+.margin-right-40{
+    margin-right: 40px;
+}
+
+.pointer{
+    cursor: pointer;
+}

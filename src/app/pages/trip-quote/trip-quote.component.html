@@ -1,0 +1,172 @@
+<div class="background-container">
+    <div class="parent-container col-12">
+        <div style="display:inline-flex;width: 100%;"  class="flex-row page-label col-12">
+            <span style="margin-left:20px;margin-top: 5px;" class="col-2 fas fa-arrow-left"></span>
+            <span class="page-label col-8">Trip Quote</span>
+        </div>
+    </div>
+    <div style="display:inline-flex;width: 100%">
+        <div style="padding-left: 10px;margin-top:25px" class="flex-col">
+            <div><b>Choose Trip Package</b></div>
+            <p class="sub">What do you want to insure while on this trip?</p>
+        </div>
+        <span style="text-align: center;margin:20px;" class="col-2 fas fa-info-circle"></span>
+    </div>
+    <div class="checkboxes flex-row-gap-40 col-12" style="display:inline-flex;width: 100%">
+        <div class="col-4">
+            <input (change)="showQuote($event,'gadget')" id="gadget" type="checkbox" class="checkbox"/>
+            <label for="gadget">Gadget</label>
+        </div>
+        <div class="col-4">
+            <input (change)="showQuote($event,'life')" id="life" type="checkbox" class="checkbox"/>
+            <label for="life">Life</label>
+        </div>
+        <div class="col-4">
+            <input (change)="showQuote($event,'accident')" id="accident" type="checkbox" class="checkbox"/>
+            <label for="accident">Accident</label>
+        </div>
+        <div class="col-4">
+            <input (change)="showQuote($event,'vehicle')" id="vehicle" type="checkbox" class="checkbox"/>
+            <label for="vehicle">Vehicle</label>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="flex-row-gap-20 col-12" style="display:inline-flex;width: 100%">
+        <div class="col-5">
+            <label>Start Location</label>
+            <select class="form-select location-select">
+                <option>Nigeria</option>
+                <option>Ghana</option>
+                <option>Kenya</option>
+                <option>London</option>
+                <option>Italy</option>
+                <option>Spain</option>
+            </select>
+        </div>
+        <div class="col-5">
+            <label>End Location</label>
+            <select class="form-select location-select">
+                <option>Nigeria</option>
+                <option>Ghana</option>
+                <option>Kenya</option>
+                <option>London</option>
+                <option>Italy</option>
+                <option>Spain</option>
+            </select>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div>
+        <div style="display:inline-flex;width: 100%;"  class="flex-row page-label col-12">
+            
+            <div *ngIf="!isChecked" ><span style="margin-left:20px;margin-top: 5px;" class="col-2 fas fa-arrow-right"></span></div>
+            <div *ngIf="isChecked" ><span style="margin-left:20px;margin-top: 5px;" class="col-2 fa-solid fa-right-left"></span></div>
+            <span class="page-label col-8">{{tripType}}</span>
+            <label class="switch">
+                <input (change)="toggleTripType($event)" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="flex-row-gap-20 col-12" style="display:inline-flex;width: 100%">
+        <div class="col-5">
+            <label>Start Date</label>
+            <input class="form-date form-control" type="date"/>
+        </div>
+        <div class="col-5">
+            <label>End Date</label>
+            <input class="form-date form-control" type="date"/>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="">
+        <div *ngIf="quotes.gadget" class="quote">
+            <h6>Insure Gadget</h6>
+            <div class="controls">
+                <label class="no-margin" for="life-type">Gadget Type</label>
+                <select id="life-type" class="form-select select">
+                    <option>Mobile Phone</option>
+                </select>
+            </div>
+            <div class="controls">
+                <label class="no-margin" for="beneficiary">Serial Number</label>
+                <input id="beneficiary" type="text" class="form-control input-text"/>
+            </div>
+            <div class="controls">
+                <label class="no-margin" for="beneficiary-amount">Gadget Value</label>
+                <input id="beneficiary-amount" type="text" class="form-control input-text"/>
+            </div>
+        </div>
+        <div *ngIf="quotes.life" class="quote">
+            <h6>Insure Life</h6>
+            <div class="controls">
+                <label class="no-margin" for="life-type">Gadget Type</label>
+                <select id="life-type" class="form-select select">
+                    <option>Accident Cover Bundle</option>
+                </select>
+            </div>
+            <div class="controls">
+                <label class="no-margin" for="beneficiary">Beneficiary's Name</label>
+                <input id="beneficiary" type="text" class="form-control input-text"/>
+            </div>
+            <div class="controls">
+                <label class="no-margin" for="beneficiary-amount">Annual Salary</label>
+                <input id="beneficiary-amount" type="text" class="form-control input-text"/>
+            </div>
+        </div>
+        <div *ngIf="quotes.accident" class="quote">
+            <h6>Insure Accident</h6>
+            <div class="controls">
+                <label class="no-margin" for="life-type">Life Type</label>
+                <select id="life-type" class="form-select select">
+                    <option>Accident Cover Bundle</option>
+                </select>
+            </div>
+            <div class="controls">
+                <label class="no-margin" for="beneficiary-amount">Annual Salary</label>
+                <input id="beneficiary-amount" type="text" class="form-control input-text"/>
+            </div>
+            <div class="controls">
+                <label class="no-margin" for="beneficiary-amount">Term</label>
+                <input id="beneficiary-amount" type="text" class="form-control input-text"/>
+            </div>
+            <div class="plan-controls">
+                <label for="plan">Payment Plan</label>
+                <select id="plan" class="form-select select">
+                    <option>WEEKLY</option>
+                    <option>MONTHLY</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="quotes.vehicle" class="quote">
+        <h6>Insure Vehicle</h6>
+        <div class="controls">
+            <label class="no-margin" for="life-type">Vehicle Type</label>
+            <select id="life-type" class="form-select select">
+                <option>Vehicle Cover Bundle</option>
+            </select>
+        </div>
+        <div class="controls">
+            <label class="no-margin" for="beneficiary">Vehicle Serial Number</label>
+            <input id="beneficiary" type="text" class="form-control input-text"/>
+        </div>
+        <div class="controls">
+            <label class="no-margin" for="beneficiary-amount">Vehicle Value</label>
+            <input id="beneficiary-amount" type="text" class="form-control input-text"/>
+        </div>
+    </div>
+    <h5>Beneficiary Detail</h5>
+    <form>
+        <div class="name-controls">
+            <label class="form-label" for="name">Name</label>
+            <input id="name" type="text" class="form-control input-text"/>
+        </div>
+        <div class="email-controls">
+            <label class="form-label" for="email">Email</label>
+            <input id="email" type="email" class="form-control input-text"/>
+        </div>
+        <button  type="submit" class="btn btn-primary submit">Next</button>
+    </form>
+</div>

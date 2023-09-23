@@ -1,0 +1,326 @@
+.parent-container {
+    /* width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-pc{
+    display: block!important;
+}
+
+.container-inner{
+    width: 70vw; 
+    height: 300vh; 
+    position: relative; 
+    background: red;
+}
+
+.nav-buttons{
+    height: 42.5px;
+}
+
+.mobile-image{
+    display: none;
+}
+
+.pc-image{
+    display: block;
+}
+
+.our-partners{
+    width: 980.36px; 
+    height: 119px; 
+    left: 230px; 
+    top: 904px; 
+    position: absolute;
+}
+
+.what-to-insure{
+    left: 80px; 
+    top: 1103px; 
+    position: absolute;
+}
+
+.what-to-insure-top{
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 28.15px; 
+    display: inline-flex;
+}
+
+.our-partners-mobile{
+    display: none!important;
+}
+
+.our-partners-pc{
+    display: block!important;
+}
+
+.insurable{
+    width: 395.56px; 
+    height: 142.22px; 
+    position: relative;
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: center!important;
+}
+
+.ads-text-pc{
+    display: block;
+}
+
+.ads-text-mobile{
+    display: none;
+}
+
+
+
+/* Mobile devices */
+@media (max-width: 480px){
+    .parent-container {
+        width: 100vw!important;
+        /* height: 1800px!important; */
+        display: flex!important;;
+        flex-direction: column!important;
+        justify-content: center!important;
+        align-items: center!important;
+        /* gap:30px!important; */
+    } 
+
+    .nav-pc{
+        display: none!important;
+    }
+
+    .ad-top{
+        width: 96vw!important;
+        margin-left: 10px!important;
+        background: #ffdc00!important;
+        border-radius: 0px!important;
+    }
+
+    .ads-text-parent{
+        left:0px!important;
+        top: 0px!important;
+    }
+
+    .ads-text-pc{
+        display: none!important;
+    }
+
+    .ads-btn-parent{
+        height: 45px!important;
+        background: black!important;
+    }
+    
+    .ads-text-mobile{
+        display: block!important;
+        font-size: 18px!important;
+        width:250px!important;
+        font-size: large!important;
+        font-weight: 0!important;
+        color: black!important;
+    }
+
+    .pink{
+        background: rgb(251, 231, 234);
+    }
+
+    .marine{
+        background: rgb(227, 245, 239);
+    }
+
+    .sky{
+        background: rgb(195, 231, 245);
+    }
+
+    .greyblue{
+        background: rgb(188, 204, 210);
+    }
+
+    .yellow{
+        background: rgb(233, 235, 219);
+    }
+
+    .ads-btn-pc{
+        display: none!important;
+    }
+
+    .ads-btn-mobile{
+        display: block!important;
+    }
+
+    .ad-top-next{
+        display: none!important;
+    }
+
+    .mobile-image{
+        display: block!important;
+    }
+
+    .pc-image{
+        display: none!important;
+    }
+
+    .our-partners{
+        display: none!important;
+    }
+
+    .insure-question{
+        display: none!important;
+    }
+
+    .got-claim{
+        background: black;
+        color:white!important;
+        width:96vw!important;
+        height:120px!important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:40px;
+    }
+
+    .account-setup{
+        margin-bottom: 40px;
+        background: rgb(247, 239, 225);
+        width:96vw!important;
+        height:150px!important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:30px;
+    }
+
+    .what-to-insure{
+        top: 280px!important;
+        left:10px!important;
+    }
+
+    .our-partners-mobile{
+        display: flex!important;
+        margin-top: 50px!important;
+    }
+
+    .our-partners-pc{
+        display: none!important;
+    }
+
+    .what-to-insure-top{
+        display: none!important;
+    }
+
+    .flex-row-wrap-gap-10{
+        display: flex!important;
+        flex-direction: row!important;
+        justify-content: start!important;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+
+    .col-12-no-auto {
+        flex: 0 0 0;
+        width: 100%;
+    }
+
+    .to-insure-mobile{
+        width:30vw;
+        height:30vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+
+    }
+
+    .what-to-insure-mobile{
+        width:96vw;
+        height:400px;
+    }
+
+    .insurable {
+        width:100%!important;
+        display: flex!important;
+        flex-direction: row!important;
+        justify-content: center!important;
+        
+    }
+
+    .what-to-insure-container{
+        width: 80vw!important;
+    }
+
+    .flex-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+
+    .flex-col-10{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+
+    .flex-col-5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+    }
+
+    .btn-continue{
+        color:white;
+        margin-left: 60px;
+        font-weight: 500;
+    }
+
+    .btn-arrow{
+        color:black;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+
+    .choose-yebo-reason{
+        /* width: 200vw!important; */
+    }
+}
+
+/* Extra small devices */
+@media (min-width:481px) and (max-width: 767px){
+  
+}
+
+/* Small tablets */
+@media (min-width:768px) and (max-width: 991px){
+  
+}
+
+/* Large tablets/Laptops */
+@media (min-width:992px) and (max-width: 1199px){
+  
+}
+
+/* Desktops */
+@media (min-width:1200px) and (max-width: 1919px){
+  
+}
+
+/* Extra large screens */
+@media (min-width: 1920px){
+  
+}
+
+
+
+
+  
