@@ -11,6 +11,10 @@ import { TripQuoteComponent } from './pages/trip-quote/trip-quote.component';
 import { LifeQuoteComponent } from './pages/life-quote/life-quote.component';
 import { AccidentCoverQuoteComponent } from './pages/accident-cover-quote/accident-cover-quote.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
+import { environment } from '../environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireModule } from '@angular/fire/compat';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +32,8 @@ import { SignupComponent } from './pages/auth/signup/signup.component';
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
     
   ],
   providers: [],
