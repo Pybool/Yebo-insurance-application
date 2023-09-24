@@ -14,6 +14,7 @@ import { SignupComponent } from './pages/auth/signup/signup.component';
 import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AuthenticationService } from './services/authentication.service';
 
 
 @NgModule({
@@ -36,7 +37,7 @@ import { AngularFireModule } from '@angular/fire/compat';
     AngularFireAuthModule,
     
   ],
-  providers: [],
+  providers: [AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
