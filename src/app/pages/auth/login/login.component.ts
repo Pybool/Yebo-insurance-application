@@ -19,9 +19,7 @@ export class LoginComponent {
   onSubmit(){
     this.authenticationService
       .login(this.user.email,this.user.password)
-      .then((response:any)=>{
-        console.log(response)
-      })
+      .then((response:any)=>{})
   }
 
   ngOnDestroy(){
