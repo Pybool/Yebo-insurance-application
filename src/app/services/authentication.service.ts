@@ -10,7 +10,11 @@ export class AuthenticationService {
   constructor(private afAuth: AngularFireAuth) {}
 
   login(email: string, password: string) {
-    return this.afAuth.signInWithEmailAndPassword(email, password);
+    return this.afAuth.signInWithEmailAndPassword(email, password)
+    .catch(err => {
+      console.log('Something went wrong:',err.message);
+      alert("Your credentials are incorrect")
+    });
   }
 
   register(email: string, password: string) {

@@ -19,7 +19,10 @@ export class LoginComponent {
   onSubmit(){
     this.authenticationService
       .login(this.user.email,this.user.password)
-      .then((response:any)=>{})
+      .then((response:any)=>{
+        alert('Signed In Successfully')
+      })
+      
   }
 
   ngOnDestroy(){
