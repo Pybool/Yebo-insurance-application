@@ -4,6 +4,13 @@
     gap:10px;
 }
 
+.flex-end{
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: space-between;
+}
+
+
 .flex-row-btw{
     display: flex;
     flex-direction: row;

@@ -1,0 +1,43 @@
+/* .custom-alert{
+    position:fixed;
+    overflow: hidden;
+    z-index:2400;
+    top:10px!important;
+    right:25%;
+    border-radius: 4px;
+    width:40%;
+    transition: all 0.5s ease-in-out;
+} */
+
+.custom-alert {
+    background-color: #ffc107; /* Alert yellow color */
+    color: white; /* Black text color */
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+    justify-content: space-evenly;
+    position:fixed;
+    overflow: hidden;
+    z-index:4000;
+    top:10px!important;
+    right:25%;
+    border-radius: 4px;
+    width:40%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .alert-dismissible {
+    padding-right: 40px; 
+  }
+  
+  .close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 10px;
+    font-size: larger;
+    color:white;
+  }
+  

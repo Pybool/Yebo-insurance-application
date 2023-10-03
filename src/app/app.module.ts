@@ -15,6 +15,8 @@ import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AuthenticationService } from './services/authentication.service';
+import { SharedModule } from './shared/shared.module';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -26,6 +28,7 @@ import { AuthenticationService } from './services/authentication.service';
     LifeQuoteComponent,
     AccidentCoverQuoteComponent,
     SignupComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,7 @@ import { AuthenticationService } from './services/authentication.service';
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
+    SharedModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     

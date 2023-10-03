@@ -1,0 +1,5 @@
+<div *ngIf="show" class="custom-alert alert-dismissible" [style.backgroundColor]="backgroundColor">
+    {{ message }}
+    <button type="button" class="close btn" aria-label="Close" (click)="dismiss()">&times;</button>
+</div>
+  

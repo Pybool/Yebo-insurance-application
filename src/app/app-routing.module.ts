@@ -6,10 +6,12 @@ import { TripQuoteComponent } from './pages/trip-quote/trip-quote.component';
 import { LifeQuoteComponent } from './pages/life-quote/life-quote.component';
 import { AccidentCoverQuoteComponent } from './pages/accident-cover-quote/accident-cover-quote.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
   {path: '', component: LandingpageComponent },
   {path: 'login', component: LoginComponent },
+  {path: 'dashboard', component: DashboardComponent },
   {path: 'signup', component: SignupComponent },
   {path: 'trip-qoute', component: TripQuoteComponent },
   {path: 'life-qoute', component: LifeQuoteComponent },

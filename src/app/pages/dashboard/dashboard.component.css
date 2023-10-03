@@ -1,7 +1,44 @@
 .parent-container {
     padding-left: 10px;
     padding-right: 10px;
+    width:100%;
+    height:90vh!important;
 }
+
+.navigation{
+    height: 100%!important;
+    background: rgb(239, 239, 209);
+}
+
+.content{
+    background: whitesmoke;
+}
+
+.nav-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.flex-links-col{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px
+}
+
+.link-item{
+    justify-content: left;
+    gap:20px
+}
+
+
+/* 
 
 .nav-pc{
     display: block!important;
@@ -74,16 +111,13 @@
 
 
 
-/* Mobile devices */
 @media (max-width: 480px){
     .parent-container {
         width: 100vw!important;
-        /* height: 1800px!important; */
         display: flex!important;;
         flex-direction: column!important;
         justify-content: center!important;
         align-items: center!important;
-        /* gap:30px!important; */
     } 
 
     .nav-pc{
@@ -285,10 +319,8 @@
         font-weight: 500;
     }
 
-    .choose-yebo-reason{
-        /* width: 200vw!important; */
-    }
-}
+
+} */
 
 /* Extra small devices */
 @media (min-width:481px) and (max-width: 767px){
