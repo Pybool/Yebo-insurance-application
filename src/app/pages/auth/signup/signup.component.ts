@@ -21,8 +21,8 @@ export class SignupComponent {
   activateButton:any = false;
   showAlert:Boolean = false;
   alertMessage: string = '';
-  alertDuration: number = 5000; // 5 seconds
-  alertBackgroundColor: string = '#ffc107'; // Alert yellow color
+  alertDuration: number = 5000; 
+  alertBackgroundColor: string = '#ffc107';
 
   constructor(private authenticationService: AuthenticationService){}
 
@@ -33,8 +33,8 @@ export class SignupComponent {
   onSubmit(){
     if(this.user.password !== this.passwordAgain){
       this.alertMessage = "Paswords do not match"
-      this.alertDuration = 3000; // 5 seconds
-      this.alertBackgroundColor = '#423f3f' //'rgb(225 31 64)';
+      this.alertDuration = 3000; 
+      this.alertBackgroundColor = '#423f3f'
       return this.passwordMismatch = true
     }
     return this.authenticationService
@@ -44,8 +44,8 @@ export class SignupComponent {
         if(response){
           response.user.sendEmailVerification()
           this.alertMessage = response?.message || 'Something has gone wrong'
-          this.alertDuration = 3000; // 5 seconds
-          this.alertBackgroundColor = '#423f3f' //'rgb(225 31 64)';
+          this.alertDuration = 3000; 
+          this.alertBackgroundColor = '#423f3f'
         }
         else{
           alert('No response from server')
